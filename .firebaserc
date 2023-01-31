@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tareaclases29": {
+      "hosting": {
+        "tareaClaseS29": [
+          "tareaclases29"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tareaclases29"
+  }
+}

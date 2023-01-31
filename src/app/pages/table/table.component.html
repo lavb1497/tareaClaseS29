@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-8 mx-auto mt-4">
+      <mat-dialog-actions class="button">
+        <button mat-raised-button color="primary" (click)="openDialog()">Añadir Producto</button>
+      </mat-dialog-actions>
+      <table mat-table class="dates">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let products of product">
+            <td>{{ products.code }}</td>
+            <td>{{ products.description }}</td>
+            <td>{{ products.price }}</td>
+            <td class="text-center">
+              <button class="btn btn-danger" (click)="onClickDeleted(products)">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

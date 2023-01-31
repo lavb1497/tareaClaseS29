@@ -1,0 +1,24 @@
+<div class="container" style="background-color: azure;">
+  <div class="row">
+    <div class="col col-sm-10 mx-auto">
+      <form [formGroup]="formRegister">
+        <div class="mt-3 mb-3">
+          <label class="form-label">Código</label>
+          <input type="text" class="form-control" type="text" formControlName="code" name="code">
+        </div>
+        <div class="mt-3 mb-3">
+          <label class="form-label">Descripción</label>
+          <input type="text" class="form-control" type="text" formControlName="description" name="description">
+        </div>
+        <div class="mt-3 v">
+          <label class="form-label">Precio</label>
+          <input type="text" class="form-control" type="text" formControlName="price" name="price">
+        </div>
+        <div class="mt-3 mb-3 text-center">
+          <button class="btn btn-primary" (click)="onSubmit()">Ingresar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
